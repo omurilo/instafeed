@@ -17,3 +17,5 @@
       // -d apply delay with 1ms in response
       // -w apply watch for changes in archive json;
     ```
+    ***
+    <center>Made with :heart: by Murilo and inspired in Diego Fernandes @ Rocketseat</center>
