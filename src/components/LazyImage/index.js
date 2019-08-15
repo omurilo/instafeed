@@ -1,4 +1,5 @@
-import React, { useState, useEffect, ReactPropTypes } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Animated } from 'react-native';
 import { Original, Small } from './styles';
 
@@ -39,12 +40,12 @@ export default function LazyImage({
 }
 
 LazyImage.propTypes = {
-  ratio: ReactPropTypes.number.isRequired,
-  smallSource: ReactPropTypes.Shape({
-    uri: ReactPropTypes.string,
+  ratio: PropTypes.number.isRequired,
+  smallSource: PropTypes.shape({
+    uri: PropTypes.string,
   }).isRequired,
-  source: ReactPropTypes.Shape({
-    uri: ReactPropTypes.string,
+  source: PropTypes.shape({
+    uri: PropTypes.string,
   }).isRequired,
-  shouldLoad: ReactPropTypes.bool.isRequired,
+  shouldLoad: PropTypes.bool.isRequired,
 };

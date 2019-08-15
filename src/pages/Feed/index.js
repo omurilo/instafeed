@@ -79,7 +79,7 @@ const Feed = () => {
         onRefresh={refreshList}
         refreshing={refreshing}
         onViewableItemsChanged={handleViewableChanged}
-        viewabilityConfig={{ viewAreaCoveragePercentThreshold: 20, minimumViewTime: 500 }}
+        viewabilityConfig={{ viewAreaCoveragePercentThreshold: 20 }}
         ListFooterComponent={isloading && <Loading />}
       />
     </View>
